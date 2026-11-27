@@ -1,0 +1,80 @@
+KP STUDIO  |  OFFLINE WINDOWS PREVIEW 0.1
+=========================================
+
+FREE TO USE. No account, subscription, internet connection during use,
+or separate Python installation is required.
+
+GET STARTED (64-bit Windows 10 or 11 on an Intel/AMD PC)
+1. Right-click the downloaded ZIP and select Extract All.
+2. Open the extracted KP Studio folder.
+3. Double-click Open KP Studio.cmd. Keep the app and runtime folders beside it.
+   The launcher is not code-signed. If a Windows policy blocks it, do not
+   disable security controls. Ask your administrator or use the source.
+4. Choose New Chart. Select Birth or Horary. Enter a date (YYYY-MM-DD)
+   and local 24-hour time. For example: 2008-01-01, 15:45:00.
+5. Search for a place, e.g. Bulandshahr, Uttar Pradesh. Select the matching
+   location, or choose Add Custom Place and enter its coordinates and zone.
+6. Select Save & Create. To make a correction later, open the chart from
+   Charts and choose Edit Details, then Save & Recalculate. Save As opens
+   a copy so your changes do not alter the original chart.
+
+PLACES AND TIME
+- Search 237,393 built-in GeoNames places worldwide. Try a city followed
+  by a comma and a region or country to narrow the list. The atlas does not
+  cover every village or street address. Custom places are reusable.
+- North/east coordinates are positive; south/west are negative. Use an
+  IANA time-zone ID (Asia/Kolkata) or a known fixed offset (+05:30).
+  Historical clock rules can be incomplete. Use a verified fixed offset
+  if needed. Fall-back clock times may require First or Second occurrence.
+- Here & Now uses the clock and the selected or most recently saved
+  location. It does not use an online location service.
+
+NEW WORKSPACE TABS
+- KP Overview: South Indian fixed-sign chart, ABCD significators by
+  planet or house, and expandable Vimshottari periods. Click any sign
+  to see all its entries and stellar lords.
+- Houses, Planets & Aspects: switch between grahas/points and stellar
+  cusps. Aspects use shortest longitude separation and an adjustable
+  0-10 degree orb (default 3 degrees).
+- Planet Significations: select any of the nine KP grahas to see Self,
+  Star Lord, Sub Lord, Conjunction and Opposition sources. Dep gives
+  occupied houses; Own gives cusp-sign rulership. A house filter shows
+  matching planets. Aspect sources use direct occupancy/rulership, not
+  recursive or node-proxy rules. No benefic/malefic grading is assumed.
+- North Indian & Notes: original chart workspace and ruling planets.
+- Uranus, Neptune, Pluto and Fortune are display-only, not KP
+  significators. Fortune uses Ascendant + Moon - Sun without a night
+  reversal. This update uses your existing chart library automatically.
+
+CHART CONVENTIONS
+- The KP NEW label in this preview uses Swiss Ephemeris mode 45,
+  Krishnamurti-Senthilathiban (VP291). The exact New KP formulation in
+  your reference application has not been confirmed. Compare the
+  ayanamsha, ASC and a few cusps with a trusted New KP chart before use.
+- The cusp tables use Placidus and derive sign lord, star lord, sub-lord,
+  and sub-sub-lord from the unrounded sidereal longitude. Mean Rahu and
+  opposite Ketu are used. Supported local birth years: 1801-2398.
+  Some polar locations do not support Placidus; no substitute house
+  system is silently used. Location entry remains worldwide.
+- Horary splits star/sub intervals at zodiac sign boundaries to obtain
+  249 divisions. The selected division start is the Horary ascendant;
+  houses are recalculated and planets remain at the entered UTC time.
+- The ruling lords and four-level significators use the conventions
+  labeled in the app. Dasha dates are shown in UTC (365.25-day year).
+
+YOUR CHARTS
+- Charts, notes and custom places are stored on your PC in
+  %LOCALAPPDATA%\KP Studio\charts.sqlite3, not inside the ZIP.
+- Charts > Back Up Library copies the local database. To restore manually,
+  close KP Studio, keep a copy of the original, and replace charts.sqlite3
+  in that folder with your backup (named charts.sqlite3).
+
+VALIDATION
+The KP calculations, analysis tables and offline storage workflow were
+tested on Linux. The Windows launcher was not run on Windows.
+
+If the app does not open, first make sure you extracted the whole ZIP.
+For a console diagnostic, open Command Prompt in the extracted folder and
+run: "Open KP Studio.cmd" --diagnostic
+
+See licenses and source for attribution, source code, and notices.
